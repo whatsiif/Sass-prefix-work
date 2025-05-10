@@ -1,0 +1,231 @@
+/* responsive */
+// tab landscape
+
+
+@media screen and (min-width:980px) and (max-width:1220px){
+    html{ font-size: 14px;}
+
+    .header-section{
+        .nav-btn{
+            .buy-btn{font-size: 14px; padding: 10px; margin: 0 2px;}
+            .sign-btn{font-size: 14px;  padding: 10px; margin: 0 2px;}
+        }
+        .menu{
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+    .wrap-2{
+        .form{margin: 0 10px;}
+    }
+    
+}
+
+
+// tab portrait
+
+@media screen and (max-width:980px){
+    .header-section{
+        .col-6 {
+            padding-left: 0;}
+    h1{
+        font-size: 2.5rem;
+    }    
+    nav{
+        ul{
+            li{padding: 0 6px;}
+        }
+        .menu{
+            a{
+               font-size: 12px;
+            }
+        }
+    }
+    .nav-btn{
+        .buy-btn{font-size: 13px; padding: 10px 5px;} 
+        .sign-btn{font-size: 13px; padding: 10px 5px; margin: 0;}
+        
+    }
+    .search{font-size: 13px;}
+}
+
+    .wrap-1{
+        .play{margin: 10% 0;} 
+        .image{margin-left: 10%;}
+    }   
+    .wrap-2{
+        .form {margin: 0;}
+    }
+    .wrap-3{
+        .all-box{
+            .box-1{top: 0;}
+            .box-3{height: 212px;}
+            .box-4{margin-top: 50px;}
+            .service-box2{padding-left: 0;}
+        }
+    }
+    .wrap-4{
+        .blog-btn{
+            .blog-btn1,.blog-btn2{
+                font-size: 13px;
+            }
+        }
+    }
+    .wrap-5{padding: 3rem 0;}
+    .wrap-5{
+        .about-us{
+            .about{padding: 45px 0 55px 15px;}
+        }
+    }
+    .wrap-6{
+        .cards{
+            .cards-btn{right:20%}
+        }
+    }
+
+
+.col-t-1{ flex-basis: 8.33%; max-width: 8.33%;}
+.col-t-2{ flex-basis: 16.66%; max-width: 16.66%;}
+.col-t-3{ flex-basis: 25%; max-width: 25%;}
+.col-t-4{ flex-basis: 33.33%; max-width: 33.33%;}
+.col-t-5{ flex-basis: 41.66%; max-width: 41.66%;}
+.col-t-6{ flex-basis: 50%; max-width: 50%;}
+.col-t-7{ flex-basis: 58.33%; max-width: 58.33%;}
+.col-t-8{ flex-basis: 66.66%; max-width: 66.66%;}
+.col-t-9{ flex-basis: 75%; max-width: 75%;}
+.col-t-10{ flex-basis: 83.33%; max-width: 83.33%;}
+.col-t-11{ flex-basis: 91.66%; max-width: 91.66%;}
+.col-t-12{ flex-basis: 100%; max-width: 100%;}
+
+
+
+
+}
+
+
+
+// mobile landscape
+
+
+@media screen and (max-width:767px){
+    html{ font-size: 13px;}
+
+   .header-section{
+    // .collapse{display: none;}
+    .nav-btn{display: none;}
+    .search{display: none;}
+    .bar{display: inline-block;}
+    #close{
+        display: block;
+        position: absolute;
+                top: 1.5rem; right: 2rem;
+                cursor:pointer;
+                font-size: 1rem;
+                font-size: 23px;
+                background: none;
+                border: none;
+    }
+
+    .collapse{
+        .menu{
+            position: fixed;
+            top: 0; right: -105%;
+            background: #fff;
+            width: 80%;
+            height: 100%;
+            flex-flow: column;
+            justify-content: center;
+
+            
+
+            &.active{
+                box-shadow:0 0 0 100vw rgba(0,0,0,.8);
+                right: 0;
+            }
+
+            a{
+                display: block;
+                margin: .8rem 0;
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+    .col-t-12{ flex-basis: 100%; max-width: 100%;}
+
+    
+}
+
+
+
+// mobile portrait
+
+@media screen and (max-width:460px){
+
+    .col-m-12{ flex-basis: 100%; max-width: 100%;}
+    .col-m-6{ flex-basis: 50%; max-width: 50%;}
+
+    
+    .wrap-1{
+        .play{margin: 10% 0;}
+        .image{margin-left: 0}
+        .banner{
+            h2{font-size: 2.375rem;margin-bottom: 1.875rem;}
+            .wrap-1-btn{margin-top: 1.5rem;}
+        }
+    }
+    .wrap-2{
+        input,select{
+            margin: 10px 0;
+        }
+        .col-12{
+            .search-btn{
+                margin: 2.375rem 0;
+            }
+        }
+    }
+    .wrap-3{
+        .col-m-12{
+            p{
+                margin: 2.125rem 0;
+            }
+            .wrap-3-btn{margin: 0 5px 50px;}
+        }
+    }
+    .wrap-4{
+        padding: 0;
+        .col-12{
+            h2{
+                font-size: 30px;
+                margin: 0;
+                margin-bottom: 50px;
+            }
+        }
+        .blog-btn{margin-bottom: 50px;}
+    }
+    .wrap-5 {
+        padding: 2rem 0;
+    }
+    .wrap-6{
+        .col-12{
+            h2{
+                font-size: 30px;
+                margin: 0;
+                margin-bottom: 50px;
+                }
+        }
+        .col-m-12{
+            .cards{margin-bottom: 50px;
+            .cards-btn{right: 33%;}}
+        }
+    }
+    .wrap-8{
+        .col-m-12{
+            input,textarea{
+                margin:10px 0;
+            }
+        }
+    }
+}
